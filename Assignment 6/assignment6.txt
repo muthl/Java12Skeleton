@@ -1,12 +1,12 @@
-arrayequals.java:
+arrayequals.java:   It checks to see if the arrays are equal in value and then prints whether they are or not.
 
-arrayinitialize.java:
+arrayinitialize.java:   prints out "smallprims[value of i] = [the number the array has stored in i value (0 is first value)]" keeps going untill array has no more numbers 
 
-arrayinitialize2.java:
+arrayinitialize2.java:  Is the same as arrayinitialize but the array is created with the amount of integers it can hold (in this case 3) then each place is given a value (2, 3, 5).
 
-arraysort.java:
+arraysort.java:     Sorts the array in assending value and prints it out
 
-breakoutwhilenested.java:
+breakoutwhilenested.java:   "breakhere" identifies the initial loop and when "break breakhere;" is written it breaks from the loop identified as breakhere
 
 bufferedreaderinput.java:
 
