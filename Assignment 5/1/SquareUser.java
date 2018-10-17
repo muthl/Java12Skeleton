@@ -9,15 +9,15 @@ public class SquareUser {
 
         while (!goodData) {
             System.out.print("Enter an integer: ");
-            try {
+            try {               //attempt to run code, if it doesnt run go to catch (if there is no integer entered the scanner throws exception)
                 num = scan.nextInt();
                 goodData = true;
             }
 
-            catch (InputMismatchException ex) {
+            catch (InputMismatchException ex) {         //if there is an inputmistmatch exception thrown by the scanner do the following
                 System.out.println("You entered bad data.");
                 System.out.println("Please try again.\n");
-                String flush = scan.next();
+                String flush = scan.next(); 
             }
         }
 

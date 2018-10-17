@@ -2,7 +2,7 @@ import java.io.*;
 
 class CreditReader {
     public static void main(String[] args) {
-        String fileName = "reaper.txt";
+        String fileName = "Test";   //specifies file Test
         String line;
 
         try {
@@ -14,7 +14,7 @@ class CreditReader {
                 line = in.readLine();
             }
             in.close();
-        } catch (IOException iox) {
+        } catch (IOException iox) { //if this exception is thrown do following
             System.out.println("Problem reading " + fileName);
         }
     }

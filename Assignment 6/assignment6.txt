@@ -8,17 +8,17 @@ arraysort.java:     Sorts the array in assending value and prints it out
 
 breakoutwhilenested.java:   "breakhere" identifies the initial loop and when "break breakhere;" is written it breaks from the loop identified as breakhere
 
-bufferedreaderinput.java:
+bufferedreaderinput.java:   reads raw characters of the input which can then be broken into different data types. Uses BufferedReader instead of a scanner. InputSteamReader converts the input from bytes to characters
 
-continueexample.java:
+continueexample.java:   skips following code and restarts the innerost while loop
 
-copyarray.java:
+copyarray.java:     copies from smallprimes index 2 and overrides luckynumbers from index 1 for 3 indexs 102, 1003, 1004 are replaced with 5, 7 , 9
 
-doloop.java:
+doloop.java:    do loop starts loop first and checks condition after doing loop. runs loop at least once.
 
-foreachloop.java:
+foreachloop.java:   short method for writing: for each element in smallprimes do something, in this case print out the element.
 
-foreachmulti.java:
+foreachmulti.java:  int[][] magicsquares creates an array of arrays. Then for each integer array in magic squares do the following for loop which prints out what is contained in each integer array
 
 forloop.java:
 
