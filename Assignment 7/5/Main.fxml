@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+
+<FlowPane  xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css" />   
+    </stylesheets>
+    <children>
+        <Label>Text</Label>
+        
+        <Label>Some more text</Label>
+        <Button fx:id="Button">Click</Button>
+    </children>
+</FlowPane>

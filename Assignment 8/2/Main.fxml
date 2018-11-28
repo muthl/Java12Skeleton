@@ -1,0 +1,13 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+<FlowPane fx:id="root" fx:controller="Repeater" xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css"/>
+    </stylesheets>
+    <children>
+        <TextField fx:id="firstField"></TextField>
+        <TextField fx:id="secondField"></TextField>
+        
+    </children>
+</FlowPane>

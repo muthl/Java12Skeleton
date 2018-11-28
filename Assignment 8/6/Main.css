@@ -1,0 +1,12 @@
+.root {
+    -fx-font: bold italic 20pt "Comic Sans MS";
+    -fx-font-size: 20px;
+    -fx-background-color: rgb(200, 200, 200);
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+.label {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}

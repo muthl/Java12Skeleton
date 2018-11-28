@@ -1,9 +1,112 @@
-/**
- * ArithmeticCalc
- */
-public class ArithmeticCalc {
+import javafx.beans.value.*;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
+import java.net.URL;
+import javafx.scene.control.Button;
 
-    public static void main(String[] args) {
+//percent = ((fatGrams * 9 calories) / calories) *100.0;
+public class ArithmeticCalc extends Application{
+    @FXML
+    private TextField firstField;
+
+    @FXML
+    private TextField secondField;
+
+    @FXML
+    private TextField outputField;
+
+    @FXML
+    public void initialize() {
+        outputField.setEditable(false);
+    }
+
+    
+public void add(ActionEvent eventc)   { 
+    String firstInput = firstField.getText(); //grabs text
+    String secondInput = secondField.getText();
+    try {
+        double firstValue = Double.valueOf(firstInput);    //converts string to a double
+        double secondValue = Double.valueOf(secondInput);    //converts string to a double
+        double output = (firstValue + secondValue);
+        outputField.setText(String.valueOf(output)); //sets outputfield to value of variable output
+    } catch (Exception e) {
+         outputField.setText("Invalid Input");   //if there is an invalid input, such as letters
+    }
+}
+public void subtract(ActionEvent eventc)   { 
+    String firstInput = firstField.getText(); //grabs text
+    String secondInput = secondField.getText();
+    try {
+        double firstValue = Double.valueOf(firstInput);    //converts string to a double
+        double secondValue = Double.valueOf(secondInput);    //converts string to a double
+        double output = (firstValue - secondValue);
+        outputField.setText(String.valueOf(output)); //sets outputfield to value of variable output
+    } catch (Exception e) {
+         outputField.setText("Invalid Input");   //if there is an invalid input, such as letters
+    }
+}
+public void multiply(ActionEvent eventc)   { 
+    String firstInput = firstField.getText(); //grabs text
+    String secondInput = secondField.getText();
+    try {
+        double firstValue = Double.valueOf(firstInput);    //converts string to a double
+        double secondValue = Double.valueOf(secondInput);    //converts string to a double
+        double output = (firstValue * secondValue);
+        outputField.setText(String.valueOf(output)); //sets outputfield to value of variable output
+    } catch (Exception e) {
+         outputField.setText("Invalid Input");   //if there is an invalid input, such as letters
+    }
+}
+public void divide(ActionEvent eventc)   { 
+    String firstInput = firstField.getText(); //grabs text
+    String secondInput = secondField.getText();
+    try {
+        
+        double firstValue = Double.valueOf(firstInput);    //converts string to a double
+        double secondValue = Double.valueOf(secondInput);    //converts string to a double
+        if (secondValue == 0) {
+            throw new ArithmeticException();
+        }
+        double output = (firstValue/secondValue);
+        outputField.setText(String.valueOf(output)); //sets outputfield to value of variable output
+    } catch (ArithmeticException e) {
+         outputField.setText("Divide by 0 Error");
+    } catch (Exception e){
+         outputField.setText("Invalid Input");   //if there is an invalid input, such as letters
+        }
+}
+
+
+public void handleclear(ActionEvent eventclear) {   //clear both fields
+    firstField.setText(null);   //sets field value to null
+    secondField.setText(null);  //sets field value to null
+    outputField.setText(null);  //sets field value to null
+}
+
+
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+        URL fxmlURL = ArithmeticCalc.class.getResource("Main.fxml");
+
+        primaryStage.setTitle("Arithmetic Calculator");
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(fxmlURL);
+        FlowPane flowPane = loader.load();
+
+        Scene scene = new Scene(flowPane);
+        primaryStage.setScene(scene);
+        primaryStage.show();
+        
         
     }
+    public static void main(String[] args){
+        launch(args);
+    }
+
 }

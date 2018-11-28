@@ -1,0 +1,33 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<FlowPane fx:id="root" fx:controller="DistanceConverter" xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css"/>
+    </stylesheets>
+    <children>
+        <HBox>
+            <VBox>
+                <Label>Centimetres</Label>
+                <TextField fx:id="firstField"></TextField>
+             </VBox>
+
+             <VBox>
+                <Label>Inches</Label>
+                <TextField fx:id="secondField"></TextField>
+             </VBox>
+             <VBox>
+                <Label>Output</Label>
+                <TextField fx:id="outputField"></TextField>
+             </VBox>
+
+             <VBox>
+                 <Button fx:id="cton" onAction="#CenttoInch">Centimetres to Inches</Button>
+                 <Button fx:id="ntoc" onAction="#InchtoCent">Inches to Centimetres</Button>
+                 <Button fx:id="clear" onAction="#handleclear">Clear</Button>
+             </VBox>
+        </HBox>
+    </children>
+</FlowPane>

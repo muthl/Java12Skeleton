@@ -1,0 +1,32 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<FlowPane fx:id="root" fx:controller="MyCalc" xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css"/>
+    </stylesheets>
+    <children>
+        <HBox>
+            <VBox>
+                <Label>Side A</Label>
+                <TextField fx:id="firstField"></TextField>
+             </VBox>
+
+             <VBox>
+                <Label>Side B</Label>
+                <TextField fx:id="secondField"></TextField>
+             </VBox>
+             <VBox>
+                <Label>Hypotenuse</Label>
+                <TextField fx:id="outputField"></TextField>
+             </VBox>
+
+             <VBox>
+                 <Button fx:id="calculater" onAction="#Calculate">Calculate Hypotenuse</Button>
+                 <Button fx:id="clear" onAction="#handleclear">Clear Fields</Button>
+             </VBox>
+        </HBox>
+    </children>
+</FlowPane>

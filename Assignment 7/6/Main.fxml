@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+
+<FlowPane  fx:id="root" fx:controller="BackgroundChange" xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css" />   
+    </stylesheets>
+    <children>
+        <Button fx:id="coolbutton" onAction="#handleButtonAction">BackgroundChange</Button>
+    </children>
+</FlowPane>

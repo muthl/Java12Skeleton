@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+
+<VBox  xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css" />   
+    </stylesheets>
+    <children>
+        <Label>Hey</Label>
+        <Label>Test Words</Label>
+        <Label>More words used in tests</Label>
+        <Button fx:id="coolbutton">Click</Button>
+        <Button fx:id="secondButton">Better</Button>
+    </children>
+</VBox>

@@ -1,0 +1,35 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<FlowPane fx:id="root" fx:controller="ArithmeticCalc" xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css"/>
+    </stylesheets>
+    <children>
+        <HBox>
+            <VBox>
+                <Label>First Value</Label>
+                <TextField fx:id="firstField"></TextField>
+             </VBox>
+
+             <VBox>
+                <Label>Second Value</Label>
+                <TextField fx:id="secondField"></TextField>
+             </VBox>
+             <VBox>
+                <Label>Output</Label>
+                <TextField fx:id="outputField"></TextField>
+             </VBox>
+
+             <VBox>
+                 <Button fx:id="add" onAction="#add">Add</Button>
+                 <Button fx:id="subtract" onAction="#subtract">Subtract</Button>
+                 <Button fx:id="multiply" onAction="#multiply">Multiply</Button>
+                 <Button fx:id="divide" onAction="#divide">Divide</Button>
+                 <Button fx:id="clear" onAction="#handleclear">Clear Values</Button>
+             </VBox>
+        </HBox>
+    </children>
+</FlowPane>

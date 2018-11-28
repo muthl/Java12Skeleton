@@ -1,0 +1,32 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<FlowPane fx:id="root" fx:controller="PercentFat" xmlns:fx="http://javafx.com/fxml">
+    <stylesheets>
+        <URL value="@Main.css"/>
+    </stylesheets>
+    <children>
+        <HBox>
+            <VBox>
+                <Label>Grams of fat</Label>
+                <TextField fx:id="firstField"></TextField>
+             </VBox>
+
+             <VBox>
+                <Label>Calories</Label>
+                <TextField fx:id="secondField"></TextField>
+             </VBox>
+
+             <VBox>  
+                <Label>Percent</Label>
+                <TextField fx:id="thirdField"></TextField>
+              </VBox>
+
+             <VBox>
+                 <Button fx:id="CalculateButton" onAction="#handlecalculate">Calculate</Button>
+             </VBox>
+        </HBox>
+    </children>
+</FlowPane>

@@ -20,54 +20,54 @@ foreachloop.java:   short method for writing: for each element in smallprimes do
 
 foreachmulti.java:  int[][] magicsquares creates an array of arrays. Then for each integer array in magic squares do the following for loop which prints out what is contained in each integer array
 
-forloop.java:
+forloop.java: X starts at one and program multiplies it by 5 for 9 times while increasing x value by one each time
 
-functionvoid.java:
+functionvoid.java: Void means that there is no return value
 
-globalconstant.java:
+globalconstant.java: final means it will never change it means the value is constant
 
-ifstatement.java:
+ifstatement.java: Checks if data is within if statement and if not it goes to ifelse and if still doesnt fit goes to default which is else statement
 
-joptionpaneinput.java:
+joptionpaneinput.java: Creates a dialog box simular to javafx that asks you for information that you then enter.
 
-localconstant.java:
+localconstant.java: the final is inside the main fuction so it is only constant there.
 
-logic.java:
+logic.java: !x or !y or !z means value is false when doing logic. else its true.
 
-mainargsarray.java:
+mainargsarray.java: grabs strings from consol and if there are arguments it prints them out and what place they hold in the array. If not it says there are no main arguements
 
-mathoperatorsfunctions.java:
+mathoperatorsfunctions.java: Various mather operaters in order: Remainder, To the Power of (aka ^), Square Root function, and cosine.
 
-multidimensionalarray.java:
+multidimensionalarray.java: Essentially just an array of arrays that prints out all the numbers contained inside the arrays in a grid pattern
 
-nesteddowhile.java:
+nesteddowhile.java: runs before checking condition. The loop creates a grid of multiplied numbers. The nested loop runs three times and then the main while loop is resumed each time it creates a line of characters. The second loop runs 4 times before ending. Each time it creates a new line..
 
-nestedfor.java:
+nestedfor.java: Works the exact same as nesteddowhile but with less code
 
-nestedif.java:
+nestedif.java: Tests first to see if x is greater than 0, if not the default is the else statement. If its greater than positive the program checks if y is greater than 0 and prints the corresponding line.
 
-nestedswitchstatement.java:
+nestedswitchstatement.java:if you choose case 1 you can choose cases 1 - 3 and if those arn't selected its the default.
 
-nestedwhile.java:
+nestedwhile.java: does the same as dowhile but checks condition first.
 
-overloadedfunction.java:
+overloadedfunction.java: uses functions to do math and put strings together and calls on the functions to print them out.
 
-raggedarray.java:
+raggedarray.java: A two dimensional array printted but initialised in a really bazar way.
 
-randomnumber.java:
+randomnumber.java: math.random() picks a "random" double between 0 and 1. the program prints a new random number out 10 times.
 
-reinitializearray.java:
+reinitializearray.java: Prints out initial array values. Changes the array values, and prints out the new arry values.
 
-scannerinput.java:
+scannerinput.java: initializes a scanner which is used to find your name. parseInt is used to pass the string scanned by the scanner into an int value.
 
-searcharray.java:
+searcharray.java: sorts the numbers in assending order uses binarysearch function to find 4. prints out array and tells you if it found the number and which index it was in.
 
-stringtonumber.java:
+stringtonumber.java: reads the string values as ints and prints them. Then reads the int values and conversts them to strings and prints the out.
 
-switchstatement.java:
+switchstatement.java: x is 3 so the case selected is 3, but without break case 5 is selected.
 
-typecast.java:
+typecast.java: prints out x as a double. y outputs an int value of x
 
-types.java:
+types.java: a variety of types of primitive data
 
-whileloop.java:
+whileloop.java: prints x * 5 and adds 1 to x value. Loops 9 times. 
