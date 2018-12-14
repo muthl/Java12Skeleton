@@ -13,7 +13,7 @@ class ArrayOps { // the parameter x will contain the array reference
     {
         int max = x[0];
         for (int index = 0; index < x.length; index++)
-            if (x[index] < max)
+            if (x[index] > max)
                 max = x[index];
 
         return max;
