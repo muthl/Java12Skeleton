@@ -1,6 +1,11 @@
 function displayMessage() {
-    alert("Hello World!"); //#2 What happens if you don’t put the ; (semicolon) in at the end of the line?
+    alert("Hello World!"); 
 }
+
+function fullname() {
+    alert("Liam Muth") 
+}
+
 
 //#1 Create another function and button that will display your full name
 
@@ -10,6 +15,11 @@ function counter() {
     for (let i = 0; i <= 10; i++) {
         document.write("the number is " + i + "</br>");
         document.write(i + "x" + i + "=" + i * i + "</br>");//do some math too! i+i..modify it to i*3
+    }
+}
+function threetimes() {
+    for (let i = -100; i <= 100; i++) {
+        document.write( i + " * 3 = " + (i *3) + "</br>");
     }
 }
 
@@ -40,6 +50,28 @@ function mathAdder() {
             num2 = parseInt(window.prompt("Please enter your second number:", "0"));
             answer = num1 + num2;
             document.write(num1 + "+" + num2 + "=" + answer + "</br>");
+        }
+    }
+}
+
+function mathfunctions() {
+
+    let num1 = 1;
+
+    while (num1 != 0) {
+        num1 = parseInt(window.prompt("Please enter you first number (0 to exit)", "0"));
+        //don't ask them for another number if they want to quit
+
+        if (num1 != 0) {
+            num2 = parseInt(window.prompt("Please enter your second number:", "0"));
+            add = num1 + num2;
+            document.write(num1 + "+" + num2 + "=" + add + "</br>");
+            subtract = num1 - num2;
+            document.write(num1 + "-" + num2 + "=" + subtract + "</br>");
+            multiply = num1 * num2;
+            document.write(num1 + "*" + num2 + "=" + multiply + "</br>");
+            divide = num1 / num2;
+            document.write(num1 + "/" + num2 + "=" + divide + "</br>");
         }
     }
 }
@@ -102,6 +134,64 @@ function rollTheDice() {
     }
     alert("Thanks for giving me all of your money!");
     //#17 How do we know they lost all there money to our game here?
+
+}
+function rollFour() {
+
+    let money = 100;
+
+    let bet = 1000;
+    // #10 Does it matter what value we give to bet here and why or why not?
+
+    alert("Play til you lose it all");
+
+    while (money >= 1) {
+        //no betting more money than you have!
+        //the line below will go forever...the if...break will
+        //get you out of this infinite betting loop if you bet legally
+
+        while (true) {
+            pick = window.prompt("Please pit over 14(o) or under 14(u)", "u");
+
+            bet = parseInt(window.prompt("Please bet", money));
+            //#11 What does parseInt do?
+
+            if (bet <= money && bet > 0) {
+                break;
+            }
+            //#12 How would you say this in English?
+
+            alert("Illegal Betting detected!");
+        }
+
+        let die1 = Math.floor(Math.random() * 6 + 1);
+        
+
+        let die2 = Math.floor(Math.random() * 6 + 1);
+
+        let die3 = Math.floor(Math.random() * 6 + 1);
+
+        let die4 = Math.floor(Math.random() * 6 + 1);
+
+        let total = die1 + die2 + die3 + die4;
+
+        document.write("</br>You rolled " + die1 + ", " + die2 + ", " + die3 + " and " + die4 + " total = " + total);
+        document.write("</br>You picked " + pick + " and rolled " + total);
+
+        if ((pick == "u" && total < 14) || (pick == "o" && total > 14)) {
+            money = money + bet;
+            document.write(" You won! You now have $" + money);
+        } else if (total == 14) {
+            document.write(" 7 is a tie...no winner..keep your bet");
+        } else {
+            money = money - bet;
+            
+
+            document.write(" You Lost! You now have $" + money);
+        }
+    }
+    alert("Thanks for giving me all of your money!");
+    
 
 }
 
